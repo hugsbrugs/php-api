@@ -106,6 +106,13 @@ class ApiResource extends Resource
         //     $response->setHeader("Refresh-Token", $new_token);
         // });
 
+        # Hack to call from server : tests
+        $all_heads = getallheaders();
+        if(!isset($_SERVER['HTTP_X_ACCESS_TOKEN']) && isset($all_heads['HTTP_X_ACCESS_TOKEN']))
+        {
+            $_SERVER['HTTP_X_ACCESS_TOKEN'] = $all_heads['HTTP_X_ACCESS_TOKEN'];
+        }
+        
         if( isset($_SERVER['HTTP_X_ACCESS_TOKEN']) && 
             ! empty($_SERVER['HTTP_X_ACCESS_TOKEN']) && 
             ! is_null($_SERVER['HTTP_X_ACCESS_TOKEN']) && 
