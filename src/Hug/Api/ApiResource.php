@@ -34,7 +34,7 @@ class ApiResource extends Resource
         $this->after(function ($response)
         {
             $response->contentType = "application/json";
-            $response->body = json_encode($response->body);
+            $response->body = json_encode($response->body, JSON_INVALID_UTF8_IGNORE);
         });
     }
 
