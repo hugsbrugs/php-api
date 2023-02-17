@@ -11,7 +11,7 @@
     ],
     "require": {
         "peej/tonic" : "dev-master",
-        "firebase/php-jwt": "^3.0",
+        "firebase/php-jwt": "^6.0",
         "ircmaxell/password-compat": "^1.0",
         "hugsbrugs/php-security": "0.1",
         "hugsbrugs/php-array": "dev-master",
