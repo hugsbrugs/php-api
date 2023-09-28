@@ -37,6 +37,11 @@ Based on Tonic syntax
 
 In your browser visit your endpoints or do CURL requests to test POST, PUT, DELETE methods.
 
+## Changelog
+
+28/09/2023 - Migration for PHP 8
+Replace "peej/tonic" : "dev-master",
+By "neekfenwick/tonic" : "^3.4.1",
 
 ## Author
 

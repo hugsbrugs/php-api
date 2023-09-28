@@ -9,8 +9,14 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "url": "https://github.com/neekfenwick/tonic",
+            "type": "vcs"
+        }
+    ],
     "require": {
-        "peej/tonic" : "dev-master",
+        "peej/tonic" : "dev-php8.1-fixes",
         "firebase/php-jwt": "^6.8",
         "ircmaxell/password-compat": "^1.0",
         "hugsbrugs/php-security": "0.1",
